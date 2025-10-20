@@ -12,7 +12,7 @@ compile: $(ELC)
 	 -f batch-byte-compile $<
 
 # Run emacs -Q with packages installed and ialign loaded
-_baremacs: ${ELC}
+sandbox: ${ELC}
 	${emacs} -Q -L . -l ialign
 
 lint:
